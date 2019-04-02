@@ -1,5 +1,11 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+app_homepage:
+    path: /
+    controller: App\Controller\HomeController::home
 
 
+
+app_page2:
+    path: /page2/{id}
+    controller: App\Controller\BlogController::page2
+    requirements:
+        id: '[0-9]+'
