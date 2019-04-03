@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <form action="{{ path('form_handler') }}" method="post">
+        <label for="firstname">Saisissez votre prénom</label>
+        <input type="text" id="firstname" name="firstname">
+
+        <input type="submit" value="Envoyer">
+    </form>
+{% endblock %}

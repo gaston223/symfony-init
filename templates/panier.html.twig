@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<h1>Affichage du panier</h1>
+    <h2>{{ nbArticles }} articles dans le panier</h2>
+    <h2>Prix Unitaire = {{ prix }}€ </h2>
+    <h2>Total ={{ nouveauPrix }}€</h2>
+
+    <button type="button" class="btn btn-danger">Vider le Panier</button>
+{% endblock %}
+
+
